@@ -78,7 +78,7 @@ const schemaArray = [
         value: 'badminton',
       },
     ],
-    defaultValue: ['籃球'],
+    defaultValue: ['basketball'],
   },
   {
     label: '在職中',
