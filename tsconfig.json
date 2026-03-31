@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "baseUrl": "./",
     "outDir": "dist",
     "sourceMap": false,
@@ -29,9 +30,8 @@
     "declarationDir": "dist",
     "rootDir": ".",
     "paths": {
-      "@src/*": [
-        "src/*"
-      ]
+      "@src": ["src/index.ts"],
+      "@src/*": ["src/*"]
     }
   },
   "include": [
