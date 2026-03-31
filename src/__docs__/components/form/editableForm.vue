@@ -147,7 +147,7 @@ const submit = async () => {
     });
     formRef.value.clearEditingColumn();
   } catch (error) {
-    const errKeys = Object.keys(error);
+    const errKeys = Object.keys(error as Record<string, unknown>);
     errKeys.forEach(key => {
       formRef.value.editingColumn.add(key);
     });

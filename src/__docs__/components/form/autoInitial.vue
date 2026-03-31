@@ -13,11 +13,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, computed } from 'vue';
+import { ref, computed } from 'vue';
 import { EnhancedElForm } from '@src';
 
 const model = ref({});
-const activeTab = ref('first');
+const activeTab = ref<'first' | 'second'>('first');
 const tabs = ref([
   {
     label: '表單一',
